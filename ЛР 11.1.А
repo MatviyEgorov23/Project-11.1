@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Ukr");
+    char cityLetter; // Змінна для збереження літери міста
+    cout << "Enter the first letter of the city: ";
+    cin >> cityLetter; // Отримання введення від користувача
+
+    switch (cityLetter) {
+    case 'K':
+        cout << "Kyiv, Population: 3.6 million, Area:839 km^2";
+        break;
+    case 'X':
+        cout << "Kharkiv, Population: 1.419 million, Area: 350 km^2";
+        break;
+    case 'D':
+        cout << "Dnipro, Population: 966 thousand, Area: 409,7 km^22";
+        break;
+    case 'O':
+        cout << "Odessa, Population: 1.01 million, Area: 162,42 km^2";
+        break;
+    case 'L':
+        cout << "Lviv, Population: 717 thousand, Area: 148,95 km^2";
+        break;
+    case 'V':
+        cout << "Vinnytsia, Population: 370,000, Area: 113,2 km^2";
+        break;
+    case 'G':
+        cout << "Zhytomyr, Population: 262 thousand, Area: 65 km^2";
+        break;
+    default:
+        cout << "The data was entered incorrectly";
+        break;
+    }
+
+    return 0;
+
+}
